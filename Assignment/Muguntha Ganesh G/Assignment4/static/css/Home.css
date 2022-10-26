@@ -1,0 +1,147 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 664px;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  margin: 330px 274px 0 auto;
+}
+
+.u-section-1 .u-group-1 {
+  width: 400px;
+  min-height: 544px;
+  height: auto;
+  margin: -313px auto 0 0;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 0;
+}
+
+.u-section-1 .u-group-2 {
+  min-height: 293px;
+  width: 510px;
+  height: auto;
+  margin: 0 -168px 0 auto;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1.125rem;
+  margin: -201px 0 60px 752px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-group-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-group-2 {
+    min-height: 240px;
+    width: 490px;
+    margin-right: -148px;
+    height: auto;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 2.25rem;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 552px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 885px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 556px;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: 433px;
+    margin-top: -539px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 131px;
+    margin-bottom: -40px;
+    margin-left: 332px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 865px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 531px;
+    margin-right: auto;
+    margin-left: 143px;
+  }
+
+  .u-section-1 .u-group-1 {
+    margin-top: -514px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 111px;
+    margin-bottom: 40px;
+    margin-left: 143px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 827px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 476px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: 286px;
+    min-height: 363px;
+    margin-top: -459px;
+  }
+
+  .u-section-1 .u-group-2 {
+    width: 340px;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 1.875rem;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 114px;
+    margin-left: 0;
+    margin-bottom: 22px;
+  }
+}
