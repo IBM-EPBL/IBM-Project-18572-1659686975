@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Food Analysis</title>
+    <link rel="stylesheet" href="static/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="static/css/fdp.css">
+    <link rel="stylesheet" href="static/css/fdppage.css">
+    <script class="u-script" type="text/javascript" src="static/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="static/js/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.20.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i">
+    <script type="application/ld+json">
+      {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Site1",
+      "logo": "static/image/portion.png"
+      }
+    </script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="fdp">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    {% if msg %}<script>alert("{{msg}}")</script> {% endif %}
+    <header class="u-clearfix u-header u-sticky u-sticky-6921 u-white u-header" id="sec-0b10">
+      <style class="u-sticky-style" data-style-id="6921">
+        .u-sticky-fixed.u-sticky-6921, .u-body.u-sticky-fixed .u-sticky-6921 
+        {
+          box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4) !important
+        }
+      </style>
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="/home" class="u-image u-logo u-image-1" data-image-width="512" data-image-height="512">
+          <img src="static/images/portion.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+            <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-36 u-unstyled u-nav-1">
+              <li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-light-1" href="/home" style="padding: 10px;">Home</a></li>
+              <li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-light-1" href="/logout" style="padding: 10px;">Logout</a></li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-menu-dropdown u-nav u-popupmenu-items u-text-active-palette-1-base u-text-hover-palette-1-light-1 u-unstyled u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/home">Home</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/logout">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--unhide camera and image upload region-->
+    <section class="u-clearfix u-image u-section-1" id="sec-3798" data-image-width="1280" data-image-height="810">
+      <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-container-style u-group u-opacity u-opacity-50 u-radius-45 u-shape-round u-white u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <div class="u-image u-image-round u-radius-10 u-image-1">
+              <form action="/work" method="POST" enctype="multipart/form-data">
+                <section id="cell1">
+                  <div class="card">
+                      <div class="top">
+                          <p>Upload Image.. Only one.. </p>
+                          <button type="submit">Upload</button>
+                      </div>
+                      <div class="drag-area">
+                          <span class="visible">
+                              Drag & drop image here or
+                              <span class="select" role="button">Browse</span>
+                          </span>
+                          <span class="on-drop">Drop images here</span>
+                          <input name="file" type="file" class="file"/>
+                      </div>
+                      <!-- IMAGE PREVIEW CONTAINER -->
+                      <div class="container"></div>
+                  </div>
+                </section>
+              </form>
+              <script src="static/js/fdp.js"></script>
+              <!-- <img class="u-image u-image-round u-radius-10 u-image-1" src="static/image/-min.jpg" alt="" data-image-width="1618" data-image-height="1080"> -->
+            </div>
+          </div>
+        </div>
+        <div class="u-container-style u-group u-opacity u-opacity-50 u-radius-50 u-shape-round u-white u-group-2">
+          <div class="u-container-layout u-valign-middle-lg u-valign-top-xs u-container-layout-2">
+            {% if data %}
+              <img class="u-image u-image-round u-radius-10 u-image-2" src="static/images/scrolldown.jpg" alt="" data-image-width="1280" data-image-height="810">
+            {% else %}
+                <img class="u-image u-image-round u-radius-10 u-image-2" src="static/images/103b46b4d634cd8f1553d39db462124b628b1086fb905aff6ef4101cc7fb429a4f39658439be648652b9ee478de865c45d07515c94c4045e257d17_1280.jpg" alt="" data-image-width="1280" data-image-height="810">
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--hide, Unhide after photoes values got, show name-->
+    {% if data %}
+    <div id = "value">
+      <section class="u-clearfix u-grey-5 u-section-2" id="sec-560d">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+            <div class="u-layout" style="">
+              <div class="u-layout-row" style="">
+                <div class="u-container-style u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
+                  <div class="u-container-layout u-container-layout-1">
+                    <h2 class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-1">{{data['category']['name']}}</h2>
+                    <p class="u-align-center u-custom-font u-font-ubuntu u-text u-text-2"> I think this is&nbsp;<span class="category">{{data['category']['name']}}</span> - {{probabilityText}}I only know 50 different dishes right now, here's the&nbsp;
+                      <a href="https://spoonacular.com/food-api/docs#Image-Classification-Categories" class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">full list</a>.
+                    </p>
+                  </div>
+                </div>
+                <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="1080" data-image-height="1080">
+                  <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
+                  <div class="container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="u-clearfix u-image u-shading u-section-3" id="sec-a7f8" data-image-width="1280" data-image-height="768">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <h3 class="u-align-center u-custom-font u-font-ubuntu u-text u-text-body-alt-color u-text-default u-text-1"><span></span></h3>
+          <h3 class="u-align-center u-custom-font u-font-ubuntu u-text u-text-body-alt-color u-text-default u-text-2"><span>Nutrition profile of the average&nbsp;{{data['category']['name']}}</span></h3>
+          <div id="calories" class="nutritionBar">
+            <div style="width: {{calories}}px;"></div>
+            <div></div><span>{{ data['nutrition']['calories']['value'] }} Approx.calories</span>
+          </div>
+          <div id="fat" class="nutritionBar">
+            <div style="width: {{fat}}px;"></div>
+            <div></div><span>{{ data['nutrition']['fat']['value'] }}{{ data['nutrition']['fat']['unit'] }} Approx.fat</span>
+          </div>
+          <div id="protein" class="nutritionBar">
+            <div style="width: {{protein}}px;"></div>
+            <div></div><span>{{ data['nutrition']['protein']['value'] }}{{ data['nutrition']['protein']['unit'] }} Approx.protein</span>
+          </div>
+          <div id="carbs" class="nutritionBar"> 
+            <div style="width: {{carbs}}px;"></div>
+            <div></div><span>{{ data['nutrition']['carbs']['value'] }}{{ data['nutrition']['carbs']['unit'] }} Approx.carbs</span>
+          </div>
+        </div>
+      </section>
+      <section class="u-clearfix u-image u-section-4" id="sec-b234" data-image-width="5616" data-image-height="3744">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <h3 class="u-align-center u-custom-font u-font-ubuntu "><span>More Receipes related to&nbsp;{{data['category']['name']}}</span></h3>
+          <div class="u-blog u-expanded-width u-blog-1">
+            <div id="receipes"></div>
+              <div class="container"></div>
+              {% for i in data['recipes'] %}
+              <div class="recipe" style="width: 240px; opacity: 1; transform: rotate(1turn);">
+                <h4>{{i['title']}}</h4>
+                <a href="{{i['url']}}">
+                  <img src='https:/spoonacular.com/recipeImages/{{i['id']}}-240x150.{{i['imageType']}}'/>
+                </a>
+              </div>
+              {% endfor %}
+          </div>
+        </div><!--/blog-->
+      </section>
+    </div>
+    {% endif %}
+    
+    <script>
+      var receipe=document.getElementById("receipes")
+      function myFunction() {
+        var x = document.getElementById("value");
+        if (data && x.style.display === "none") 
+        {
+          x.style.display = "block";
+        } 
+        else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+    
+  </body>
+</html>
